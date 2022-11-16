@@ -1,0 +1,164 @@
+@font-face {
+    font-family: bebas;
+    src: url(BebasNeue\ Regular.otf);
+}
+
+.logo{
+    width: 150px;
+    margin-left: 50px;
+    display: flex;
+}
+
+.menu{
+    background: white;
+    height: 75px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.192);
+}
+
+.menu__items{
+    display: flex;
+    margin-right: 30px;
+}
+
+.menu__items li{
+    border-radius: 10px;
+    margin: 0 5px;
+}
+
+.menu__items li a{
+    font-family: bebas;
+    color:#a0a0a0;
+    padding: 5px 13px;
+    text-decoration: none;
+    font-size: 23px;
+    display: block;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.menu__items li a::after{
+    content: "";
+    display: block;
+    background: #3FA8CC;
+    width: 100%;
+    height: 3px;
+    margin-top: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .3s;
+}
+
+.menu__items li a.active::after{
+    clip-path: none;
+}
+.menu__items li a.active, .menu__items li a:hover{
+    color: black;
+    transition: .3s;
+}
+
+.menu__items li a:hover{
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.lbl__menu{
+    width: 40px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    margin-right: 15px;
+    display: none;
+}
+.spn1,.spn2,.spn3{
+    position: absolute;
+    content: "";
+    background-color: black;
+    width: 40px;
+    height: 4px;
+    border-radius: 5px;
+    transition: all 400ms ease;
+}
+.spn2{
+    top: 11px;
+}
+.spn3{
+    top: 22px;
+}
+
+#menu{
+    display: none;
+}
+
+#menu:checked ~ .lbl__menu .spn1{
+    transform: rotate(140deg);
+    top: 10px;
+}
+#menu:checked ~ .lbl__menu .spn3{
+    transform: rotate(-140deg);
+    top: 10px;
+}
+
+#menu:checked ~ .lbl__menu .spn2{
+    opacity: 0;
+}
+
+
+ul.show{
+    left: 0;
+}
+
+
+@media  screen and (max-width: 858px) {
+    .lbl__menu{
+        display: block;
+    }
+    .menu{
+        height: 105px;
+    }
+    .menu__items{
+        position: fixed;
+        width: 100vw;
+        height: 100%;
+        background-color: black;
+        left: -100vw;
+        top: 105px;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+    }
+    .menu__items li a.active{
+        color: #3FA8CC;
+    }
+
+    .menu__items li{
+        margin: 20px 0 0 0;
+        line-height: 30px;
+    }
+    .menu__items li:hover {
+        border: none;
+    }
+    .menu__items li a{
+        font-size: 23px;
+        color: white;
+    }
+    .menu__items li a:hover{
+        color: #3FA8CC;
+    }
+    .logo{
+        width: 200px;
+        margin-left: 10px;
+    }
+}
+
+@media  screen and (max-width: 858px) and (orientation: landscape) {
+    .menu__items li {
+       margin: 20px 0 0 0;
+    }
+
+    .menu__items{
+        overflow: scroll;
+        height: calc(100% - 65px);
+    }
+}
+
