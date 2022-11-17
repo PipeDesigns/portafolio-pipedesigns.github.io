@@ -8,10 +8,22 @@ addEventListener("DOMContentLoaded", () =>{
     }
 })
 
-// const inicio = document.querySelector (".inicio");
-// const sobreMi = document.querySelector (".sobre-mi");
+const menu = document.getElementById("menu");
+const video = document.querySelector(".video__principal");
+const label = document.querySelector(".lbl__menu");
 
 
-// function sobre_mi(){
-//     inicio.classList.remove("active");
-// }
+function check() {
+    if (menu.checked == false){
+        video.style.display = `none`;
+    }
+    else{
+        setTimeout( function aparecer(){
+            video.style.display = `block`;
+        },250)
+    }
+}
+
+function aparecer() {
+    video.style.display = `block`;
+}

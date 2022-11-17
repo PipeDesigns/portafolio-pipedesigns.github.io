@@ -10,6 +10,8 @@
 }
 
 .menu{
+    position: fixed;
+    z-index: 100;
     background: white;
     height: 75px;
     width: 100vw;
@@ -117,9 +119,9 @@ ul.show{
         height: 105px;
     }
     .menu__items{
-        position: fixed;
+        position: absolute;
         width: 100vw;
-        height: 100%;
+        height: 1000px;
         background-color: black;
         left: -100vw;
         top: 105px;
@@ -151,14 +153,5 @@ ul.show{
     }
 }
 
-@media  screen and (max-width: 858px) and (orientation: landscape) {
-    .menu__items li {
-       margin: 20px 0 0 0;
-    }
 
-    .menu__items{
-        overflow: scroll;
-        height: calc(100% - 65px);
-    }
-}
 
