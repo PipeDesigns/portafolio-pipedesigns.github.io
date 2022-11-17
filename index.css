@@ -1,0 +1,40 @@
+.banner{
+    height: calc(100vh - 75px);
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.video__principal{
+
+    width: 90%;
+    top: calc(0 +175px);
+}
+
+.botones__video{
+    height: auto;
+    position: absolute;
+    top: calc(20em + 15vw);
+    display: flex;
+    width: 55%;
+    justify-content: space-between;
+}
+
+.links{
+    position: sticky;
+    height: 20%;
+    padding: 4% 15%;
+    background-color: aqua;
+    border-radius: 10px;
+}
+/* .instagram{
+    padding: 25px 100px;
+} */
+
+
+@media  screen and (max-width: 768px){
+    .banner{
+        height: auto;
+    }
+}
