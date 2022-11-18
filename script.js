@@ -27,3 +27,26 @@ function check() {
 function aparecer() {
     video.style.display = `block`;
 }
+
+// const juegoAhorcado = document.querySelector(".juego-ahorcado");
+// const infoPortafolio = document.getElementById("info__portafolio");
+// const infoAhorcado = document.getElementById("info__ahorcado");
+// const infoEncriptador = document.getElementById("info__encriptador");
+
+
+// function cerrar() {
+//     infoEncriptador.style.display = "";
+// }
+
+// function abrirAhorcado() {
+//     infoAhorcado.style.display = "flex";
+// }
+
+// function abrirPortafolio() {
+//     infoPortafolio.style.display = "flex";
+// }
+
+// function abrirEncriptador() {
+//     infoEncriptador.style.display = "flex";
+// }
+

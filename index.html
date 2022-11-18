@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio Pipe Designs</title>
     <link rel="stylesheet" href="reset.css">
+    <link rel="shortcut icon" href="Imagenes/logo basico.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
@@ -15,7 +16,7 @@
 <body>
     <header>
         <nav class="menu">
-            <img class="logo" src="Imagenes/LOGO ACTUALIZADO PD 2-04.png" alt="Logo Pipe Designs">
+            <a href="index.html"><img class="logo" src="Imagenes/LOGO ACTUALIZADO PD 2-04.png" alt="Logo Pipe Designs"></a>
             <ul class="menu__items">
                 <li><a class="active inicio" href="index.html" onclick="pagina_inicio()">Inicio</a></li>
                 <li><a class="sobre-mi" href="sobre mi.html" onclick="pagina_sobre_mi()">Sobre mí</a></li>
@@ -33,34 +34,144 @@
 
     <main>
         <div class="banner">
-            <video class="video__principal" src="Imagenes/ANIMACION WEB PIPE DESIGNS_VP9.webm" autoplay mute>video>
+            <video class="video__principal" src="Imagenes/ANIMACION WEB PIPE DESIGNS_VP9.webm" autoplay muted>video>
         </div>
-
-
-        <a href="sobre mi.html"><h2>Sobre mí</h2></a>
-        <section class="index__sobre-mi">
-            <div class="index__sobre-mi__imagen">
-                <img class="imagen__pipe" src="Imagenes/IMG-20220731-WA0034 (1).jpg" alt="Imagen Felipe Cuadros">
-            </div>
-            <div class="index__sobre-mi__informacion">
-                <div class="titulo">
-                    <p>Felipe Cuadros Jaramillo</p>
-                    <p>Diseñador gráfico</p>
-                    <p>Desarrollador web Full Stack</p>
-                    <p>Creador de pipe designs</p>
-                </div>
-                <p class="descripcion">
-                    Desde siempre me ha gustado y me he interesado por todo lo relacionado con la tecnología desde niño muy curioso por querer aprender por mi cuenta diferentes cosas, entre ellas la creación de páginas web y el querer aprender a manejar los programas de edición como Photoshop, Illustrator, After Effects, etc..
-                    Todo esto me ha orientado a querer vivir de lo que me gusta que es el desarrollo web y el diseño gráfico.
-                </p>
+        <section class="container__bienvenida">
+            <img class="robot" src="Imagenes/ROBOT saludando-01.svg" alt="robot saludando">
+            <div class="bienvenida">
+                <p><b>¡Bienvenid@!</b></p>
+                <p>Te invito a que conózcas de mí </p>
+                <p>y mi trabajo</p>
             </div>
         </section>
-        <a href="sobre mi.html"><p class="link__pagina">Conoce más sobre mí</p></a>
-    </main>
-    <script src="script.js"></script>
-</body>
-    <footer>
         
+
+        <section class="container__index__sobre__mi">
+            <div class="titulo__principal">
+                <a href="sobre mi.html"><h2>Sobre mí</h2></a>
+            </div>
+            <div class="index__sobre-mi">
+                <div class="index__sobre-mi__imagen">
+                    <img class="imagen__pipe" src="Imagenes/IMG-20220731-WA0034 (1).jpg" alt="Imagen Felipe Cuadros">
+                </div>
+                <div class="index__sobre-mi__informacion">
+                    <div class="titulo">
+                        <p>Felipe Cuadros Jaramillo</p>
+                        <p>Diseñador gráfico</p>
+                        <p>Desarrollador web Full Stack</p>
+                        <p>Creador de pipe designs</p>
+                    </div>
+                    <p class="descripcion">
+                        Desde siempre me ha gustado y me he interesado por todo lo relacionado con la <b class="negrita">tecnología</b> desde niño muy curioso por querer aprender por mi cuenta diferentes cosas, entre ellas la creación de <b>páginas web</b> y el querer aprender a manejar los programas de edición como <b>Photoshop, Illustrator, After Effects</b>, etc..
+                        Todo esto me ha orientado a querer vivir de lo que me gusta que es <b>el desarrollo web y el diseño gráfico.</b> 
+                    </p>
+                </div>
+            </div>
+            <div class="links__adicionales">
+                <a href="sobre mi.html"><p class="link__pagina">Conoce más sobre mí</p></a>
+            </div>
+        </section> 
+
+        <section class="index__portafolio">
+            <div class="index__portafolio__informacion">
+                <div class="portafolio__index">
+                    <p>Estas son algunas de <b>mis creaciones</b></p>
+                </div>
+            </div>
+            <div class="index__portafolio__imagen">
+                <img class="imagen__mockup" src="Imagenes/MOCKUP PC Y CEL ENCRIPTADOR.png" alt="MOCKUP">
+            </div>
+        </section>
+
+        <div class="portafolio__elementos">
+
+            <div class="juego-ahorcado" onclick="abrirAhorcado()">
+                <div class="principal__portafolio">
+                    <img class="imagen-principal__portafolio" src="Imagenes/JUEGO DEL AHORCADO.PNG" alt="">
+                    <p class="titulo-principal__portafolio">PÁGINA - JUEGO DEL AHORCADO</p>
+                </div>
+                <div class="info" id="info__ahorcado">
+                    <img class="mockup__portafolio" src="Imagenes/JUEGO DEL AHORCADO.PNG" alt="">
+                    <p class="informacion__ahorcado desc">
+                        Juego del ahorcado: <br><br>
+                        Este es un juego muy entretenido con temática de brujas en el que tienes que adivinar una palabra secreta sin dejar que se te acaben los intentos, si no logras adivinar la palabra habrás perdido y volverás a comenzar desde cero con una nueva palabra <br><br>
+                        <b>✅</b> Ambientación y personaje vectorizados <br>
+                        <b>✅</b> Hecho desde cero <br>
+                        <b>✅</b> Diseño y creación personalizados <br>
+                        <b>✅</b> Herramientas utilizadas: Js, Html, css, Ai, Ae <br>
+                        <b>✅</b> Versión Desktop <br>
+                    </p>
+                    <img class="equis" src="Imagenes/x (1).png" alt="" onclick="cerrar()">
+                </div>
+            </div>
+
+            <div class="portafolio-pipedesigns" onclick="abrirPortafolio()">
+                <div class="principal__portafolio">
+                    
+                    <img class="imagen-principal__portafolio" src="Imagenes/PORTAFOLIO.PNG" alt="">
+                    <span class="fondo"></span>
+                    <p class="titulo-principal__portafolio">PORTAFOLIO PIPE DESIGNS</p>
+                </div>
+                <div class="info" id="info__portafolio">
+                    <img class="mockup__portafolio" src="Imagenes/PORTAFOLIO.PNG" alt="">
+                    <p class="informacion__portafolio desc">
+                        <b>Portafolio Pipe Designs:</b><br><br>
+                        Esta es mi pagina personal, donde encuentras mi información, mi portafolio y mi contacto<br><br>
+                        <b>✅</b> Diseño y creación personalizados<br><br>
+                        <b>✅</b> Hecho desde cero<br>
+                        <b>✅</b> Animaciones personalizadas<br>
+                        <b>✅</b> Herramientas utilizadas: Js, Html, css, Ai, Ae<br>
+                        <b>✅</b> Versión Mobile<br>
+                        <b>✅</b> Versión Desktop
+                    </p>
+                    <img class="equis" src="Imagenes/x (1).png" alt="" onclick="cerrar()">
+                </div>
+            </div>
+            
+            <div class="encriptador" onclick="abrirEncriptador()">
+                <div class="principal__portafolio">
+                    <img class="imagen-principal__portafolio" src="Imagenes/ENCRIPTADOR.PNG" alt="">
+                    <p class="titulo-principal__portafolio">PÁGINA - ENCRIPTADOR</p>
+                </div>
+                <div class="info" id="info__encriptador">
+                    <img class="mockup__portafolio" src="Imagenes/ENCRIPTADOR.PNG" alt="">
+                    <p class="informacion__encriptador desc">
+                        <b>Decodificador:</b> <br><br>
+                        Esta es una página sencilla que codifica y decodifica textos de una manera simple pero eficaz <br><br>
+                        <b>✅</b> Diseño y creación personalizados <br>
+                        <b>✅</b> Hecho desde cero <br>
+                        <b>✅</b> Animaciones personalizadas <br>
+                        <b>✅</b> Herramientas utilizadas: Js, Html, css, Ai <br>
+                        <b>✅</b> Versión Mobile <br>
+                        <b>✅</b> Versión Desktop <br>
+                    </p>
+                    <img class="equis" src="Imagenes/x (1).png" alt="" onclick="cerrar()">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="links__adicionales">
+            <a href="portafolio.html"><p class="link__pagina">Aquí encuentras más proyectos</p></a>
+        </div>
+
+    </main>
+    <footer>
+        <section class="container__footer">
+            <a class="logo__footer__link" href="index.html"><img class="logo__footer logo"  src="Imagenes/LOGO ACTUALIZADO PD 3-04.png" alt="Logo Pipe Designs"></a>
+            <div class="redes__footer">
+                <a href="https://www.instagram.com/pipedesigns_0/" target="_blank"><img src="Imagenes/INSTAGRAM.svg" alt="instagram"></a>
+                <a href="https://api.whatsapp.com/send?phone=+573005659259&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n" target="_blank"><img src="Imagenes/WHATSAPP.svg" alt="whatsapp"></a>
+                <a href="https://www.behance.net/felipecuadros1" target="_blank"><img src="Imagenes/BEHANCE.svg" alt="Behance"></a>
+            </div>
+            <ul class="menu__items footer">
+                <li><a class="link__footer" href="index.html" onclick="pagina_inicio()">Inicio</a></li>
+                <li><a class="link__footer" href="sobre mi.html" onclick="pagina_sobre_mi()">Sobre mí</a></li>
+                <li><a class="link__footer" href="portafolio.html" onclick="pagina_portafolio()">Portafolio</a></li>
+                <li><a class="link__footer" href="contacto.html" onclick="pagina_contacto()">contacto</a></li>
+            </ul>
+        </section>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
