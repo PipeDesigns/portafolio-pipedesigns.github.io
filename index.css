@@ -322,4 +322,29 @@ h2{
         left: 0;
     }
 
+    .robot{
+        display: none;
+    }
+    .bienvenida{
+        text-align: start;
+    }
+
+    .bienvenida b{
+        font-size: 70px;
+    }
+    .imagen__mockup{
+        display: none;
+    }
+    .portafolio__index b{
+        font-size: 70px;
+
+    }
+    .portafolio__index{
+        font-size: 70px;
+    }
+
+    .bienvenida p:last-child{
+        font-size: 60px;
+    }
+
 }
