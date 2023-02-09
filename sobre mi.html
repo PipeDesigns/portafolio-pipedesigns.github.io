@@ -5,8 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre mí Pipe Designs</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="shortcut icon" href="Imagenes/logo basico.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/sobreMi.css">
 </head>
 <body>
     <header>
@@ -29,13 +35,50 @@
     </header>
 
     <main>
-        sobre mi
+        <section class="container__sobre__mi">
+            <div class="titulo">
+                <p>Felipe Cuadros Jaramillo</p>
+                <p>Diseñador gráfico</p>
+                <p>Desarrollador web Full Stack</p>
+                <p>Creador de pipe designs</p>
+            </div>
+            <div class="container__sobre-mi">
+                <div class="sobre-mi__informacion">
+                    <div class="container__imagen">
+                        <img class="imagen__sobre-mi" src="Imagenes/IMG-20220731-WA0034 (1).jpg" alt="Imagen Felipe Cuadros">
+                    </div>
+                    <div class="container__descripcion">
+                        <h2>¿Quién soy?</h2>
+                        <p class="descripcion__sobre-mi">
+                            Mi nombre es <b>Felipe Cuadros Jaramillo</b>, actualmente tengo 20 años y soy egresado del programa <b>ONE</b> (Oracle Next education) como desarrollador web y estudiante de diseño gráfico en <b>CENSA</b>.<br>
+                            He ejercido como diseñador gráfico <b>freelance</b> desde 2020 y ahora me encuentro adquiriendo nuevos conocimientos para ampliar mis aptitudes tanto en desarrollo web como en diseño gráfico.
+
+                            Desde siempre me ha gustado y me he interesado por todo lo relacionado con la <b>tecnología</b> desde niño muy curioso por querer aprender por mi cuenta diferentes cosas, entre ellas la creación de <b>páginas web</b> y el querer aprender a manejar los programas de edición como <b>Photoshop, Illustrator, After Effects</b>, etc..
+                            Todo esto me ha orientado a querer vivir de lo que me gusta que es <b>el desarrollo web y el diseño gráfico.</b> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="script.js"></script>
 </body>
-    <footer>
-        
-    </footer>
+<footer>
+    <section class="container__footer">
+        <a class="logo__footer__link" href="index.html"><img class="logo__footer logo"  src="Imagenes/LOGO ACTUALIZADO PD 3-04.png" alt="Logo Pipe Designs"></a>
+        <div class="redes__footer">
+            <a href="https://www.instagram.com/pipedesigns_0/" target="_blank"><img src="Imagenes/INSTAGRAM.svg" alt="instagram"></a>
+            <a href="https://api.whatsapp.com/send?phone=+573005659259&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n" target="_blank"><img src="Imagenes/WHATSAPP.svg" alt="whatsapp"></a>
+            <a href="https://www.behance.net/felipecuadros1" target="_blank"><img src="Imagenes/BEHANCE.svg" alt="Behance"></a>
+        </div>
+        <ul class="menu__items footer">
+            <li><a class="link__footer" href="index.html" onclick="pagina_inicio()">Inicio</a></li>
+            <li><a class="link__footer" href="sobre mi.html" onclick="pagina_sobre_mi()">Sobre mí</a></li>
+            <li><a class="link__footer" href="portafolio.html" onclick="pagina_portafolio()">Portafolio</a></li>
+            <li><a class="link__footer" href="contacto.html" onclick="pagina_contacto()">contacto</a></li>
+        </ul>
+    </section>
+</footer>
 </body>
 </html>
         

@@ -1,0 +1,66 @@
+main{
+}
+
+.container__sobre__mi{
+}
+
+.titulo{
+    background-color: black;
+    font-family:bebas;
+    letter-spacing: 0.13em;
+    font-weight: 600;
+    padding: 0 10% 3% 5%;
+    padding-top: calc(105px + 3%)
+}
+.titulo p:first-child{
+    color: white;
+    font-size: 80px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.titulo p:nth-child(2), .titulo p:nth-child(3){
+    font-size: 50px;
+    color: #3FA8CC;
+}
+.titulo p:last-child{
+    color: white;
+    font-size: 50px;
+}
+
+.container__sobre-mi{
+    width: 90%;
+    margin: 0 5%;
+}
+
+.sobre-mi__informacion{
+    height: calc(100vh - 105px);
+    width: 100%;
+    display: flex;
+    
+}
+
+.container__imagen{
+    width: 100%;
+    margin-top: 4%;
+}
+
+.imagen__sobre-mi{
+    width:  80%;
+}
+
+.container__descripcion{
+    width: 150%;
+    margin-top: 4%;
+}
+h2{
+    font-size: 60px;
+    margin: 0;
+}
+
+.descripcion__sobre-mi{
+    width: 100%;
+    font-family: montserrat;
+    font-size: 20px;
+    margin-top: 5%;
+    line-height: 28px;
+}

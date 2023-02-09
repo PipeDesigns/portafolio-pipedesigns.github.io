@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio Pipe Designs</title>
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="CSS/reset.css">
     <link rel="shortcut icon" href="Imagenes/logo basico.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
 </head>
 <body>
     <header>
@@ -83,76 +85,113 @@
             </div>
         </section>
 
+
         <div class="portafolio__elementos">
-
-            <div class="juego-ahorcado" onclick="abrirAhorcado()">
-                <div class="principal__portafolio">
-                    <img class="imagen-principal__portafolio" src="Imagenes/JUEGO DEL AHORCADO.PNG" alt="">
-                    <p class="titulo-principal__portafolio">PÁGINA - JUEGO DEL AHORCADO</p>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="info">
+                            <img class="mockup__portafolio" src="Imagenes/JUEGO DEL AHORCADO.PNG" alt="">
+                            <p class="informacion__ahorcado desc">
+                                <b>Juego del ahorcado:</b>  <br><br>
+                                Este es un juego muy entretenido con temática de brujas en el que tienes que adivinar una palabra secreta sin dejar que se te acaben los intentos, si no logras adivinar la palabra habrás perdido y volverás a comenzar desde cero con una nueva palabra <br><br>
+                                <b>✅</b> Ambientación y personaje vectorizados <br>
+                                <b>✅</b> Hecho desde cero <br>
+                                <b>✅</b> Diseño y creación personalizados <br>
+                                <b>✅</b> Herramientas utilizadas: <b>Js, Html, css, Ai, Ae</b> <br>
+                                <b>✅</b> Versión Desktop <br><br><br>
+                                <a class="visitar__info" href="https://pipedesigns.github.io/juego-del-ahorcado.github.io/" target="_blank">VISITAR</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="info" id="info__portafolio">
+                            <img class="mockup__portafolio" src="Imagenes/PORTAFOLIO.PNG" alt="">
+                            <p class="informacion__portafolio desc">
+                                <b>Portafolio Pipe Designs:</b><br><br>
+                                Esta es mi pagina personal, donde encuentras mi información, mi portafolio y mi contacto<br><br>
+                                <b>✅</b> Diseño y creación personalizados<br>
+                                <b>✅</b> Hecho desde cero<br>
+                                <b>✅</b> Animaciones personalizadas<br>
+                                <b>✅</b> Herramientas utilizadas: <b>Js, Html, css, Ai, Ae</b><br>
+                                <b>✅</b> Versión Mobile<br>
+                                <b>✅</b> Versión Desktop <br><br><br>
+                                <a class="visitar__info" href="https://pipedesigns.github.io/portafolio-pipedesigns.github.io/" target="_blank">VISITAR</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="info" id="info__encriptador">
+                            <img class="mockup__portafolio" src="Imagenes/ENCRIPTADOR.PNG" alt="">
+                            <p class="informacion__encriptador desc">
+                                <b>Decodificador:</b> <br><br>
+                                Esta es una página sencilla que codifica y decodifica textos de una manera simple pero eficaz <br><br>
+                                <b>✅</b> Diseño y creación personalizados <br>
+                                <b>✅</b> Hecho desde cero <br>
+                                <b>✅</b> Animaciones personalizadas <br>
+                                <b>✅</b> Herramientas utilizadas: <b>Js, Html, css, Ai</b> <br>
+                                <b>✅</b> Versión Mobile <br>
+                                <b>✅</b> Versión Desktop <br><br><br>
+                                <a class="visitar__info" href="https://pipedesigns.github.io/encriptador.github.io/" target="_blank">VISITAR</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="info" id="info__ahorcado">
-                    <img class="mockup__portafolio" src="Imagenes/JUEGO DEL AHORCADO.PNG" alt="">
-                    <p class="informacion__ahorcado desc">
-                        Juego del ahorcado: <br><br>
-                        Este es un juego muy entretenido con temática de brujas en el que tienes que adivinar una palabra secreta sin dejar que se te acaben los intentos, si no logras adivinar la palabra habrás perdido y volverás a comenzar desde cero con una nueva palabra <br><br>
-                        <b>✅</b> Ambientación y personaje vectorizados <br>
-                        <b>✅</b> Hecho desde cero <br>
-                        <b>✅</b> Diseño y creación personalizados <br>
-                        <b>✅</b> Herramientas utilizadas: Js, Html, css, Ai, Ae <br>
-                        <b>✅</b> Versión Desktop <br>
-                    </p>
-                    <img class="equis" src="Imagenes/x (1).png" alt="" onclick="cerrar()">
-                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
-
-            <div class="portafolio-pipedesigns" onclick="abrirPortafolio()">
-                <div class="principal__portafolio">
-                    
-                    <img class="imagen-principal__portafolio" src="Imagenes/PORTAFOLIO.PNG" alt="">
-                    <span class="fondo"></span>
-                    <p class="titulo-principal__portafolio">PORTAFOLIO PIPE DESIGNS</p>
-                </div>
-                <div class="info" id="info__portafolio">
-                    <img class="mockup__portafolio" src="Imagenes/PORTAFOLIO.PNG" alt="">
-                    <p class="informacion__portafolio desc">
-                        <b>Portafolio Pipe Designs:</b><br><br>
-                        Esta es mi pagina personal, donde encuentras mi información, mi portafolio y mi contacto<br><br>
-                        <b>✅</b> Diseño y creación personalizados<br><br>
-                        <b>✅</b> Hecho desde cero<br>
-                        <b>✅</b> Animaciones personalizadas<br>
-                        <b>✅</b> Herramientas utilizadas: Js, Html, css, Ai, Ae<br>
-                        <b>✅</b> Versión Mobile<br>
-                        <b>✅</b> Versión Desktop
-                    </p>
-                    <img class="equis" src="Imagenes/x (1).png" alt="" onclick="cerrar()">
-                </div>
-            </div>
-            
-            <div class="encriptador" onclick="abrirEncriptador()">
-                <div class="principal__portafolio">
-                    <img class="imagen-principal__portafolio" src="Imagenes/ENCRIPTADOR.PNG" alt="">
-                    <p class="titulo-principal__portafolio">PÁGINA - ENCRIPTADOR</p>
-                </div>
-                <div class="info" id="info__encriptador">
-                    <img class="mockup__portafolio" src="Imagenes/ENCRIPTADOR.PNG" alt="">
-                    <p class="informacion__encriptador desc">
-                        <b>Decodificador:</b> <br><br>
-                        Esta es una página sencilla que codifica y decodifica textos de una manera simple pero eficaz <br><br>
-                        <b>✅</b> Diseño y creación personalizados <br>
-                        <b>✅</b> Hecho desde cero <br>
-                        <b>✅</b> Animaciones personalizadas <br>
-                        <b>✅</b> Herramientas utilizadas: Js, Html, css, Ai <br>
-                        <b>✅</b> Versión Mobile <br>
-                        <b>✅</b> Versión Desktop <br>
-                    </p>
-                    <img class="equis" src="Imagenes/x (1).png" alt="" onclick="cerrar()">
-                </div>
-            </div>
-
         </div>
 
-        <div class="links__adicionales">
+
+        <div class="index__portafolio__diseño">
+            <div class="imgen__portafolio__diseño">
+                <div class="fondo__mielatto">
+                    <span class="fondo"></span>
+                    <p class="titulo__diseño">MIELATTO</p>
+                    <img src="Imagenes/diseño grafico/1 MIELATTO LOGO.jpg" alt="MIELATTO">
+                </div>
+            </div>
+            <div class="imgen__portafolio__diseño">
+                <div class="fondo__prisma">
+                    <span class="fondo"></span>
+                    <p class="titulo__diseño"> PRISMA STUDIO</p>
+                    <img src="Imagenes/diseño grafico/PRISMA STUDIO LOGO.png" alt="PRISMA STUDIO">
+                </div>
+            </div>
+            <div class="imgen__portafolio__diseño">
+                <div class="fondo__barber">
+                    <span class="fondo"></span>
+                    <p class="titulo__diseño">REAL BARBER SHOP</p>
+                    <img src="Imagenes/diseño grafico/LOGO R BARBER SHOP.png" alt="REAL BARBER SHOP">
+                </div>
+            </div>
+            <div class="imgen__portafolio__diseño">
+                <div class="fondo__bellas">
+                    <span class="fondo"></span>
+                    <p class="titulo__diseño">BELLAS Y MÁGICAS</p>
+                    <img src="Imagenes/diseño grafico/LOGO BELLAS Y MAGICAS.png" alt="BELLAS Y MÁGICAS">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="links__adicionales mas__proyectos" >
             <a href="portafolio.html"><p class="link__pagina">Aquí encuentras más proyectos</p></a>
+        </div>
+
+
+        <div class="index__contacto">
+            <p>
+                Hacemos realidad tus ideas para llevar tu empresa <br> <b>al siguiente nivel</b>
+            </p>
+            <img class="index__contacto__img" src="Imagenes/CONTACTO PIPE DESIGNS.png" alt="contacto pipe designs">
+        </div>
+        <div class="links__adicionales" >
+            <a href="contacto.html"><p class="link__pagina">Decídete ya y transforma tu marca</p></a>
         </div>
 
     </main>
@@ -172,6 +211,9 @@
             </ul>
         </section>
     </footer>
+    <!-- scripts de slider portafolio -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
     <script src="script.js"></script>
 </body>
 </html>
