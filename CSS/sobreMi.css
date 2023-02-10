@@ -52,15 +52,149 @@ main{
     width: 150%;
     margin-top: 4%;
 }
+
+/* SECCION FORMACION */
+
+.container__formacion__sobre-mi{
+    padding: 5% ;
+    background-color: black;
+    height: 60vh;
+}
+
 h2{
     font-size: 60px;
     margin: 0;
 }
 
+.formaciones{
+    margin: 5% 0;
+    display: flex;
+    justify-content: space-around;
+}
+
 .descripcion__sobre-mi{
     width: 100%;
     font-family: montserrat;
-    font-size: 20px;
-    margin-top: 5%;
+    font-size: 18px;
+    margin-top: 4%;
     line-height: 28px;
+}
+
+.container__formaciones{
+    width: 30%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 2%;
+}
+
+.titulo__formaciones{
+    font-family: bebas;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.formaciones__medio{
+    display: flex;
+    margin: 5% 0;
+    align-items: center;
+}
+
+.descripcion__formacion{
+    width: 70%;
+    margin: 0 5%;
+    font-family: montserrat;
+    font-size: 18px;
+}
+
+.logo__formaciones{
+    width: 30%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.322);
+}
+
+.fecha__formaciones{
+    font-family: montserrat;
+    font-size: large;
+    font-weight: bold;
+    color: gray ;
+    text-align: center;
+    margin-top: 3%;
+}
+
+/* SECCION HABILIDADES */
+
+.habilidades{
+    padding: 5% 0;
+}
+
+.habilidades__sobre-mi{
+    width: 80%;
+    margin: 5% 10% 0 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.imagen__habilidades{
+    padding: 10% 5%;
+    width: 100%;
+}
+
+.imagen__habilidades img{
+    width: 50%;
+}
+
+.fondo__habilidades{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 5%;
+    background-color: #3fa9ccc4;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.habilidad__html,
+.habilidad__css,
+.habilidad__js,
+.habilidad__java,
+.habilidad__git,
+.habilidad__mysql,
+.habilidad__ai,
+.habilidad__ps,
+.habilidad__ae{
+    position: relative;
+    text-align: center;
+    width: 20%;
+    cursor: pointer;
+    margin: 0 2%;
+}
+
+.habilidad__html:hover .fondo__habilidades, .habilidad__html:hover .texto__habilidades,
+.habilidad__css:hover .fondo__habilidades, .habilidad__css:hover .texto__habilidades,
+.habilidad__js:hover .fondo__habilidades, .habilidad__js:hover .texto__habilidades,
+.habilidad__java:hover .fondo__habilidades, .habilidad__java:hover .texto__habilidades,
+.habilidad__git:hover .fondo__habilidades, .habilidad__git:hover .texto__habilidades,
+.habilidad__mysql:hover .fondo__habilidades, .habilidad__mysql:hover .texto__habilidades,
+.habilidad__ai:hover .fondo__habilidades, .habilidad__ai:hover .texto__habilidades,
+.habilidad__ps:hover .fondo__habilidades, .habilidad__ps:hover .texto__habilidades,
+.habilidad__ae:hover .fondo__habilidades, .habilidad__ae:hover .texto__habilidades
+{
+    opacity: 1;
+    transition: opacity .5s;
+}
+
+.texto__habilidades{
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-family: bebas;
+    font-weight: 550;
+    font-size: 35px;
+    color: white;
+    opacity: 0;
+    transition: opacity .5s;
 }

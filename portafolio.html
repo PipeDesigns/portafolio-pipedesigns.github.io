@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/portafolio.css ">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 </head>
 <body>
     <header>
@@ -34,9 +36,111 @@
     </header>
 
     <main>
-        PORTAFOLIO
+        <section class="index__portafolio portafolio__inicio">
+            <div class="index__portafolio__informacion">
+                <div class="portafolio__index">
+                    <p>Estas son algunas de <b>mis creaciones</b></p>
+                </div>
+            </div>
+            <div class="index__portafolio__imagen">
+                <img class="imagen__mockup" src="Imagenes/MOCKUP PC Y CEL ENCRIPTADOR.png" alt="MOCKUP">
+            </div>
+        </section>
+
+
+        <div class="portafolio__elementos">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="info">
+                            <img class="mockup__portafolio" src="Imagenes/JUEGO DEL AHORCADO.PNG" alt="">
+                            <p class="informacion__ahorcado desc">
+                                <b>Juego del ahorcado:</b>  <br><br>
+                                Este es un juego muy entretenido con temática de brujas en el que tienes que adivinar una palabra secreta sin dejar que se te acaben los intentos, si no logras adivinar la palabra habrás perdido y volverás a comenzar desde cero con una nueva palabra <br><br>
+                                <b>✅</b> Ambientación y personaje vectorizados <br>
+                                <b>✅</b> Hecho desde cero <br>
+                                <b>✅</b> Diseño y creación personalizados <br>
+                                <b>✅</b> Herramientas utilizadas: <b>Js, Html, css, Ai, Ae</b> <br>
+                                <b>✅</b> Versión Desktop <br><br><br>
+                                <a class="visitar__info" href="https://pipedesigns.github.io/juego-del-ahorcado.github.io/" target="_blank">VISITAR</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="info" id="info__portafolio">
+                            <img class="mockup__portafolio" src="Imagenes/PORTAFOLIO.PNG" alt="">
+                            <p class="informacion__portafolio desc">
+                                <b>Portafolio Pipe Designs:</b><br><br>
+                                Esta es mi pagina personal, donde encuentras mi información, mi portafolio y mi contacto<br><br>
+                                <b>✅</b> Diseño y creación personalizados<br>
+                                <b>✅</b> Hecho desde cero<br>
+                                <b>✅</b> Animaciones personalizadas<br>
+                                <b>✅</b> Herramientas utilizadas: <b>Js, Html, css, Ai, Ae</b><br>
+                                <b>✅</b> Versión Mobile<br>
+                                <b>✅</b> Versión Desktop <br><br><br>
+                                <a class="visitar__info" href="https://pipedesigns.github.io/portafolio-pipedesigns.github.io/" target="_blank">VISITAR</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="info" id="info__encriptador">
+                            <img class="mockup__portafolio" src="Imagenes/ENCRIPTADOR.PNG" alt="">
+                            <p class="informacion__encriptador desc">
+                                <b>Decodificador:</b> <br><br>
+                                Esta es una página sencilla que codifica y decodifica textos de una manera simple pero eficaz <br><br>
+                                <b>✅</b> Diseño y creación personalizados <br>
+                                <b>✅</b> Hecho desde cero <br>
+                                <b>✅</b> Animaciones personalizadas <br>
+                                <b>✅</b> Herramientas utilizadas: <b>Js, Html, css, Ai</b> <br>
+                                <b>✅</b> Versión Mobile <br>
+                                <b>✅</b> Versión Desktop <br><br><br>
+                                <a class="visitar__info" href="https://pipedesigns.github.io/encriptador.github.io/" target="_blank">VISITAR</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+
+
+        <div class="index__portafolio__diseño">
+            <div class="imgen__portafolio__diseño">
+                <div class="fondo__mielatto">
+                    <span class="fondo"></span>
+                    <p class="titulo__diseño">MIELATTO</p>
+                    <img src="Imagenes/diseño grafico/1 MIELATTO LOGO.jpg" alt="MIELATTO">
+                </div>
+            </div>
+            <div class="imgen__portafolio__diseño">
+                <div class="fondo__prisma">
+                    <span class="fondo"></span>
+                    <p class="titulo__diseño"> PRISMA STUDIO</p>
+                    <img src="Imagenes/diseño grafico/PRISMA STUDIO LOGO.png" alt="PRISMA STUDIO">
+                </div>
+            </div>
+            <div class="imgen__portafolio__diseño">
+                <div class="fondo__barber">
+                    <span class="fondo"></span>
+                    <p class="titulo__diseño">REAL BARBER SHOP</p>
+                    <img src="Imagenes/diseño grafico/LOGO R BARBER SHOP.png" alt="REAL BARBER SHOP">
+                </div>
+            </div>
+            <div class="imgen__portafolio__diseño">
+                <div class="fondo__bellas">
+                    <span class="fondo"></span>
+                    <p class="titulo__diseño">BELLAS Y MÁGICAS</p>
+                    <img src="Imagenes/diseño grafico/LOGO BELLAS Y MAGICAS.png" alt="BELLAS Y MÁGICAS">
+                </div>
+            </div>
+        </div>
+
     </main>
-    <script src="script.js"></script>
 </body>
 <footer>
     <section class="container__footer">
@@ -54,5 +158,8 @@
         </ul>
     </section>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+<script src="portafolio.js"></script>
 </body>
 </html>
